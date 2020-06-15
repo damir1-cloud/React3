@@ -38,4 +38,9 @@
 }
 .maindiv {
   text-align: center;
+  height: 100%;
+}
+.dark{
+  background-color: black;
+  color: white;
 }
