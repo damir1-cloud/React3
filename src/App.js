@@ -6,7 +6,7 @@ import VaC from './ValueContext';
 
 
 function App() {
-  let Vacc = useState(false);
+  let Vacc = useState(true);
   return (
     <VaC.Provider value = {Vacc}>
     <div className = "maindiv">
