@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import VaC from '../ValueContext';
+import Child2 from './Child2';
 
 
 let Child = () => {
-    let Val = React.useContext(VaC);
+    let Val = useContext(VaC);
     
     return (
         <div className = {`cdiv ${Val[0]? "lit" : "dark"}`}>
@@ -11,6 +12,8 @@ let Child = () => {
             <button onClick = {()=>{
                 Val[1](!Val[0]);
             }}>Toggle switch</button>
+            <br/><br/>
+            <Child2/>
         </div>
     );
 }
